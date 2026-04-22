@@ -1,1400 +1,596 @@
-.navigation-bar-wrapper {
-  display: contents;
-}
-.navigation-bar-container {
-  width: 100%;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  background-color: var(--dl-color-theme-neutral-light);
-}
-.navigation-bar-navbar-interactive {
-  fill: var(--dl-color-theme-neutral-dark);
-  color: #ffffff;
-  width: 100%;
-  height: 160px;
-  display: flex;
-  max-width: idth;
-  align-items: center;
-  padding-top: var(--dl-space-space-twounits);
-  padding-left: var(--dl-space-space-threeunits);
-  padding-right: var(--dl-space-space-threeunits);
-  padding-bottom: var(--dl-space-space-twounits);
-  justify-content: space-between;
-  background-color: #b594e1;
-}
-.navigation-bar-desktop-menu {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-}
-.navigation-bar-image {
-  width: 147px;
-  height: 156px;
-  object-fit: cover;
-}
-.navigation-bar-links1 {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.navigation-bar-link11 {
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-  border-color: rgba(255, 255, 255, 0);
-  border-width: 1px;
-  text-decoration: none;
-}
-.navigation-bar-writing {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-}
-.navigation-bar-link31 {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-}
-.navigation-bar-link41 {
-  color: #fffefe;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-}
-.navigation-bar-link51 {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-  text-decoration: none;
-}
-.navigation-bar-icon-group1 {
-  gap: var(--dl-space-space-twounits);
-  display: flex;
-  align-items: center;
-  margin-left: var(--dl-space-space-twounits);
-}
-.navigation-bar-burger-menu {
-  display: none;
-}
-.navigation-bar-icon16 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
-.navigation-bar-mobile-menu {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100vh;
-  display: none;
-  padding: var(--dl-space-space-twounits);
-  z-index: 100;
-  position: absolute;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--dl-color-theme-neutral-light);
-}
-.navigation-bar-nav {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.navigation-bar-top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--dl-space-space-threeunits);
-  justify-content: space-between;
-}
-.navigation-bar-logo {
-  height: 3rem;
-}
-.navigation-bar-close-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navigation-bar-icon18 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
-.navigation-bar-links2 {
-  gap: var(--dl-space-space-unit);
-  flex: 0 0 auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.navigation-bar-icon-group2 {
-  gap: var(--dl-space-space-twounits);
-  display: flex;
-}
-.home-fragment13 {
-  display: contents;
-}
-.home-text15 {
-  display: inline-block;
-}
-.home-fragment11 {
-  display: contents;
-}
-.home-text13 {
-  display: inline-block;
-}
-.home-fragment12 {
-  display: contents;
-}
-.home-text14 {
-  display: inline-block;
-}
-.home-fragment10 {
-  display: contents;
-}
-.home-text10 {
-  display: inline-block;
-}
-.home-fragment14 {
-  display: contents;
-}
-.home-text16 {
-  display: inline-block;
-}
-.navigation-barroot-class-name {
-  background-color: #b594e1;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiverse of Marshpotato</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<!-- Really Petshop fallback via Lilita One (same bouncy rounded display style) -->
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'Really Petshop';
+  src: url('https://db.onlinewebfonts.com/t/b2f0f4e1f6ee6c8dc88bab89cc98b7e2.woff2') format('woff2'),
+       url('https://db.onlinewebfonts.com/t/b2f0f4e1f6ee6c8dc88bab89cc98b7e2.woff') format('woff');
 }
 
+:root {
+  --purple:       #7b6bbf;
+  --purple-light: #9b8fd4;
+  --purple-dark:  #5c4f9a;
+  --pink:         #e8b4c8;
+  --pink-light:   #f2d0df;
+  --pink-btn:     #c97aaa;
+  --body-bg:      #f5f3f8;
+  --white:        #ffffff;
+  --text-dark:    #3d3060;
+  --text-mid:     #6b5ea8;
+  --text-light:   #9b8fd4;
+  --border:       #ddd5f0;
 
-@media(max-width: 991px) {
-  .navigation-bar-navbar-interactive {
-    background-color: #b594e1;
-  }
-  .navigation-bar-image {
-    width: 54px;
-    height: 88px;
-    padding-right: 0px;
-  }
-  .navigation-bar-link11 {
-    fill: transparent;
-    color: #ffffff;
-    display: flex;
-    animation-name: pulse;
-    animation-delay: 0s;
-    animation-duration: 300ms;
-    animation-direction: normal;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-  }
-  .home-text10 {
-    box-shadow: inherit;
-  }
-  .home-text11 {
-    color: #ffffff;
-  }
-}
-@media(max-width: 767px) {
-  .navigation-bar-navbar-interactive {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-  }
-  .navigation-bar-desktop-menu {
-    display: none;
-  }
-  .navigation-bar-burger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media(max-width: 479px) {
-  .navigation-bar-navbar-interactive {
-    height: 130px;
-    padding: var(--dl-space-space-unit);
-    padding-left: var(--dl-space-space-twounits);
-  }
-  .navigation-bar-mobile-menu {
-    padding: var(--dl-space-space-unit);
-  }
+  --font-display: 'Really Petshop', 'Lilita One', cursive;
+  --font-body:    'Poppins', sans-serif;
 }
 
-.welcome-wrapper {
-  display: contents;
-}
-.welcome-header1 {
-  height: 452px;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center;
-}
-.welcome-max-width {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.welcome-column {
-  gap: 24px;
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.welcome-content {
-  gap: 24px;
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.welcome-actions {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: flex-start;
-}
-.welcome-image {
-  width: 560px;
-  height: 347px;
-  object-fit: cover;
-}
-.home-fragment16 {
-  display: contents;
-}
-.home-text20 {
-  display: inline-block;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment15 {
-  display: contents;
-}
-.home-text17 {
-  display: inline-block;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment17 {
-  display: contents;
-}
-.home-text21 {
-  display: inline-block;
-  font-family: "Poppins-Light";
-}
-.home-fragment18 {
-  display: contents;
-}
-.home-text22 {
-  display: inline-block;
-  font-family: "ReallyPetshop";
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 
-@media(max-width: 991px) {
-  .welcome-container {
-    flex-direction: column;
-  }
-}
-@media(max-width: 767px) {
-  .welcome-heading1 {
-    text-align: center;
-  }
-  .welcome-content1 {
-    text-align: center;
-  }
-  .welcome-actions {
-    width: 100%;
-    justify-content: center;
-  }
-}
-@media(max-width: 479px) {
-  .welcome-header1 {
-    height: 671px;
-  }
-  .welcome-heading1 {
-    width: 297px;
-    height: 282px;
-  }
-  .welcome-actions {
-    flex-direction: column;
-  }
-  .welcome-button1 {
-    width: 100%;
-  }
-  .welcome-button2 {
-    width: 100%;
-  }
-  .welcome-image {
-    width: 125px;
-    height: 259px;
-  }
-}
-
-.new-picks-wrapper {
-  display: contents;
-}
-.new-picks-layout349 {
-  gap: var(--dl-space-space-twounits);
-  height: 1186px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--dl-color-theme-accent1);
-}
-.new-picks-max-width {
-  height: 1084px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.new-picks-container1 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  max-width: 600px;
-  align-items: center;
-  margin-bottom: var(--dl-space-space-fourunits);
-  flex-direction: column;
-}
-.new-picks-text11 {
-  text-align: center;
-}
-.new-picks-container2 {
-  width: 100%;
-  height: 1407px;
-}
-.new-picks-card1 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
-.new-picks-image1 {
-  width: var(--dl-size-size-medium);
-  height: var(--dl-size-size-medium);
-  object-fit: cover;
-}
-.new-picks-text13 {
-  text-align: center;
-}
-.new-picks-card2 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary1);
-}
-.new-picks-image2 {
-  width: var(--dl-size-size-medium);
-  height: var(--dl-size-size-medium);
-  object-fit: cover;
-}
-.new-picks-text15 {
-  text-align: center;
-}
-.new-picks-card3 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
-.new-picks-image3 {
-  width: var(--dl-size-size-medium);
-  height: var(--dl-size-size-medium);
-  object-fit: cover;
-}
-.new-picks-text17 {
-  text-align: center;
-}
-.new-picks-card4 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary1);
-}
-.new-picks-image4 {
-  width: 83px;
-  height: 97px;
-  object-fit: cover;
-}
-.new-picks-text19 {
-  text-align: center;
-}
-.new-picks-card5 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary1);
-}
-.new-picks-image5 {
-  width: var(--dl-size-size-medium);
-  height: var(--dl-size-size-medium);
-  object-fit: cover;
-}
-.new-picks-text21 {
-  text-align: center;
-}
-.new-picks-card6 {
-  color: var(--dl-color-theme-neutral-light);
-  height: auto;
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-theme-primary2);
-}
-.new-picks-image6 {
-  width: var(--dl-size-size-medium);
-  height: var(--dl-size-size-medium);
-  object-fit: cover;
-}
-.new-picks-text23 {
-  text-align: center;
-}
-.home-fragment31 {
-  display: contents;
-}
-.home-text39 {
-  display: inline-block;
-}
-.home-fragment23 {
-  display: contents;
-}
-.home-text27 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment22 {
-  display: contents;
-}
-.home-text26 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment30 {
-  display: contents;
-}
-.home-text36 {
-  display: inline-block;
-}
-.home-fragment19 {
-  display: contents;
-}
-.home-text23 {
-  color: var(--dl-color-theme-secondary1);
-  display: inline-block;
-  font-size: 20px;
-  font-family: "Poppins-Light";
-}
-.home-fragment27 {
-  display: contents;
-}
-.home-text31 {
-  display: inline-block;
-}
-.home-text32 {
-  font-family: "Poppins";
-}
-.home-fragment20 {
-  display: contents;
-}
-.home-text24 {
-  color: rgb(181, 148, 225);
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment29 {
-  display: contents;
-}
-.home-text35 {
-  display: inline-block;
-  font-family: "Poppins";
-}
-.home-fragment32 {
-  display: contents;
-}
-.home-text40 {
-  display: inline-block;
-}
-.home-fragment25 {
-  display: contents;
-}
-.home-text29 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment21 {
-  display: contents;
-}
-.home-text25 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment26 {
-  display: contents;
-}
-.home-text30 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment24 {
-  display: contents;
-}
-.home-text28 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment28 {
-  display: contents;
-}
-.home-text34 {
-  display: inline-block;
-  font-family: "Poppins";
-}
-
-@media(max-width: 1200px) {
-  .new-picks-image5 {
-    width: 63px;
-    height: 72px;
-  }
-  .new-picks-image6 {
-    width: 94px;
-    height: 75px;
-  }
-}
-@media(max-width: 991px) {
-  .new-picks-layout349 {
-    height: 1359px;
-  }
-  .new-picks-max-width {
-    flex-direction: column;
-  }
-  .new-picks-container1 {
-    margin-bottom: var(--dl-space-space-threeunits);
-  }
-  .new-picks-card6 {
-    height: 315px;
-  }
-}
-@media(max-width: 767px) {
-  .new-picks-container1 {
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
-  }
-  .new-picks-card1 {
-    width: 100%;
-  }
-  .new-picks-card2 {
-    width: 100%;
-  }
-  .new-picks-card3 {
-    width: 100%;
-  }
-  .new-picks-card4 {
-    width: 100%;
-  }
-  .new-picks-card5 {
-    width: 100%;
-  }
-  .new-picks-card6 {
-    width: 100%;
-  }
-}
-@media(max-width: 479px) {
-  .new-picks-layout349 {
-    height: 1822px;
-  }
-  .new-picks-card1 {
-    height: 202px;
-  }
-  .new-picks-card2 {
-    height: 213px;
-  }
-  .new-picks-card3 {
-    height: 240px;
-  }
-  .new-picks-card4 {
-    height: 237px;
-    margin-top: 0px;
-  }
-  .new-picks-card5 {
-    height: 249px;
-  }
-  .new-picks-card6 {
-    height: 253px;
-  }
-}
-
-.footer-wrapper {
-  display: contents;
-}
-.footer-container1 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.footer-max-width {
-  gap: var(--dl-space-space-oneandhalfunits);
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.footer-content {
-  gap: var(--dl-space-space-fourunits);
-  width: 100%;
-  display: flex;
-  padding: var(--dl-space-space-twounits);
-  align-self: stretch;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius4);
-  margin-bottom: var(--dl-space-space-twounits);
-}
-.footer-container2 {
-  flex: 0 0 auto;
-  width: 500px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.footer-image {
-  width: 200px;
-  object-fit: cover;
-}
-.footer-newsletter {
-  gap: var(--dl-space-space-oneandhalfunits);
-  width: 500px;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.footer-actions {
-  gap: 16px;
-  width: 100%;
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.footer-form {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-self: stretch;
-  align-items: stretch;
-  flex-shrink: 0;
-}
-.footer-container3 {
-  width: 365px;
-  display: flex;
-  align-items: flex-start;
-}
-.footer-text-input {
-  width: 100%;
-  height: 32px;
-  display: flex;
+body {
+  background: var(--body-bg);
+  color: var(--text-dark);
+  font-family: var(--font-body);
   font-size: 16px;
-  box-sizing: content-box;
-  text-align: left;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 100;
+  background: var(--purple);
+  display: flex;
   align-items: center;
-  font-family: "Poppins-Light";
-  font-weight: 400;
-  background-color: transparent;
-}
-.footer-action1 {
-  font-family: "Poppins-Light";
-  text-decoration: none;
-}
-.footer-links {
-  gap: var(--dl-space-space-twounits);
-  width: 100%;
-  display: flex;
-  flex-grow: 1;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-.footer-column1 {
-  gap: var(--dl-space-space-unit);
-  width: auto;
-  display: flex;
-  overflow: hidden;
-  flex-grow: 1;
-  max-width: 300px;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.footer-footer-links1 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.footer-link1 {
-  text-decoration: none;
-}
-.footer-link2 {
-  text-decoration: none;
-}
-.footer-column2 {
-  gap: var(--dl-space-space-unit);
-  width: auto;
-  display: flex;
-  overflow: hidden;
-  flex-grow: 1;
-  max-width: 300px;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.footer-footer-links2 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.footer-link6 {
-  text-decoration: none;
-}
-.footer-column3 {
-  gap: var(--dl-space-space-unit);
-  width: auto;
-  display: flex;
-  overflow: hidden;
-  flex-grow: 1;
-  max-width: 300px;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.footer-social-links {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.footer-link11 {
-  gap: 12px;
-  display: flex;
-  padding: 8px 0;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-}
-.footer-social-link2 {
-  font-family: "Poppins";
-}
-.footer-link13 {
-  gap: 12px;
-  display: flex;
-  padding: 8px 0;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-}
-.footer-social-link3 {
-  font-family: "Poppins";
-  text-decoration: none;
-}
-.footer-link14 {
-  gap: 12px;
-  display: flex;
-  padding: 8px 0;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-  padding-left: 8px 0;
-}
-.footer-social-link51 {
-  font-family: "Poppins";
-  text-decoration: none;
-}
-.footer-link15 {
-  gap: 12px;
-  display: flex;
-  padding: 8px 0;
-  align-self: stretch;
-  align-items: center;
-  flex-shrink: 0;
-  padding-left: 8px 0;
-}
-.footer-social-link52 {
-  font-family: "Poppins";
-  text-decoration: none;
-}
-.footer-credits {
-  gap: var(--dl-space-space-twounits);
-  width: 100%;
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.footer-row {
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-shrink: 0;
   justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 72px;
 }
-.footer-footer-links3 {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  align-items: flex-start;
-}
-.footer-link12 {
+
+.nav-logo { cursor:pointer; display:flex; align-items:center; }
+.nav-logo img { height:56px; width:auto; }
+
+.nav-links { display:flex; gap:.25rem; list-style:none; }
+.nav-links a {
+  color: rgba(255,255,255,.9);
   text-decoration: none;
+  font-family: var(--font-body);
+  font-size: .95rem;
+  font-weight: 600;
+  padding: .4rem 1rem;
+  border-radius: 999px;
+  transition: background .2s, color .2s;
 }
-.home-fragment37 {
-  display: contents;
-}
-.home-text47 {
-  color: #922727;
-  display: inline-block;
-}
-.home-fragment45 {
-  display: contents;
-}
-.home-text55 {
-  display: inline-block;
-}
-.home-fragment35 {
-  display: contents;
-}
-.home-text45 {
-  display: inline-block;
-}
-.home-fragment49 {
-  display: contents;
-}
-.home-text59 {
-  display: inline-block;
-}
-.home-fragment36 {
-  display: contents;
-}
-.home-text46 {
-  display: inline-block;
-}
-.home-fragment48 {
-  display: contents;
-}
-.home-text58 {
-  display: inline-block;
-}
-.home-fragment34 {
-  display: contents;
-}
-.home-text44 {
-  display: inline-block;
-}
-.home-fragment38 {
-  display: contents;
-}
-.home-text48 {
-  display: inline-block;
-}
-.home-fragment44 {
-  display: contents;
-}
-.home-text54 {
-  display: inline-block;
-}
-.home-fragment33 {
-  display: contents;
-}
-.home-text43 {
-  display: inline-block;
-}
-.home-fragment41 {
-  display: contents;
-}
-.home-text51 {
-  display: inline-block;
-}
-.home-fragment43 {
-  display: contents;
-}
-.home-text53 {
-  display: inline-block;
-}
-.home-fragment40 {
-  display: contents;
-}
-.home-text50 {
-  display: inline-block;
-}
-.home-fragment39 {
-  display: contents;
-}
-.home-text49 {
-  display: inline-block;
-}
-.home-fragment42 {
-  display: contents;
-}
-.home-text52 {
-  display: inline-block;
-}
-.home-fragment46 {
-  display: contents;
-}
-.home-text56 {
-  display: inline-block;
-}
-.home-fragment47 {
-  display: contents;
-}
-.home-text57 {
-  display: inline-block;
+.nav-links a:hover, .nav-links a.active {
+  background: rgba(255,255,255,.2);
+  color: #fff;
 }
 
-@media(max-width: 991px) {
-  .footer-container2 {
-    width: 389px;
-  }
-  .footer-newsletter {
-    width: 300px;
-  }
-  .footer-form {
-    width: 100%;
-    flex-direction: column;
-  }
-  .footer-container3 {
-    width: 100%;
-  }
-  .footer-text-input {
-    width: 100%;
-    padding: var(--dl-space-space-halfunit);
-  }
-  .footer-button {
-    width: 100%;
-    padding-top: var(--dl-space-space-halfunit);
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
-    padding-bottom: var(--dl-space-space-halfunit);
-  }
-}
-@media(max-width: 767px) {
-  .footer-content {
-    flex-direction: column;
-  }
-  .footer-newsletter {
-    width: 100%;
-  }
-  .footer-form {
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .footer-container3 {
-    width: 100%;
-  }
-  .footer-button {
-    width: 208px;
-  }
-  .footer-links {
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .footer-column1 {
-    align-items: center;
-  }
-  .footer-column1-title {
-    text-align: center;
-  }
-  .footer-footer-links1 {
-    align-self: center;
-  }
-  .footer-column2 {
-    align-items: center;
-  }
-  .footer-column2-title {
-    text-align: center;
-  }
-  .footer-footer-links2 {
-    align-self: center;
-  }
-  .footer-column3 {
-    align-items: center;
-  }
-  .footer-social-link1-title {
-    text-align: center;
-  }
-  .footer-social-links {
-    align-self: center;
-  }
-  .footer-row {
-    flex-direction: column;
-  }
-}
-@media(max-width: 479px) {
-  .footer-actions {
-    width: 100%;
-  }
-  .footer-form {
-    width: 100%;
-    flex-direction: column;
-  }
-  .footer-container3 {
-    width: 100%;
-  }
-  .footer-button {
-    width: 100%;
-  }
-  .footer-links {
-    flex-direction: column;
-  }
-  .footer-column1 {
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-footer-links1 {
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-column2 {
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-footer-links2 {
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-column3 {
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-social-links {
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-credits {
-    gap: 0;
-  }
-  .footer-row {
-    gap: var(--dl-space-space-oneandhalfunits);
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-footer-links3 {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
+.nav-socials { display:flex; gap:1rem; align-items:center; }
+.nav-socials a { color:rgba(255,255,255,.85); text-decoration:none; font-size:1.1rem; transition:color .2s; }
+.nav-socials a:hover { color:#fff; }
 
-.home-container {
-  width: 100%;
-  display: flex;
-  min-height: 100vh;
+/* SECTIONS */
+section { display:none; padding-top:72px; min-height:100vh; }
+section.active { display:block; }
+
+/* HERO */
+.hero {
+  background: var(--body-bg);
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 5rem 5rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.home-fragment10 {
-  display: contents;
+
+.hero-text h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  color: var(--purple-dark);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  font-weight: normal;
 }
-.home-text10 {
+
+.hero-text p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  max-width: 480px;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.hero-btns { display:flex; gap:1rem; flex-wrap:wrap; }
+
+.btn {
+  padding: .6rem 1.8rem;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: .95rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all .2s;
+  text-decoration: none;
   display: inline-block;
 }
-.home-fragment11 {
-  display: contents;
-}
-.home-text13 {
-  display: inline-block;
-}
-.home-fragment12 {
-  display: contents;
-}
-.home-text14 {
-  display: inline-block;
-}
-.home-fragment13 {
-  display: contents;
-}
-.home-text15 {
-  display: inline-block;
-}
-.home-fragment14 {
-  display: contents;
-}
-.home-text16 {
-  display: inline-block;
-}
-.home-fragment15 {
-  display: contents;
-}
-.home-text17 {
-  display: inline-block;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment16 {
-  display: contents;
-}
-.home-text20 {
-  display: inline-block;
-  font-size: 20px;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment17 {
-  display: contents;
-}
-.home-text21 {
-  display: inline-block;
-  font-family: "Poppins-Light";
-}
-.home-fragment18 {
-  display: contents;
-}
-.home-text22 {
-  display: inline-block;
-  font-family: "ReallyPetshop";
-}
-.home-fragment19 {
-  display: contents;
-}
-.home-text23 {
-  color: var(--dl-color-theme-secondary1);
-  display: inline-block;
-  font-size: 20px;
-  font-family: "Poppins-Light";
-}
-.home-fragment20 {
-  display: contents;
-}
-.home-text24 {
-  color: rgb(181, 148, 225);
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment21 {
-  display: contents;
-}
-.home-text25 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment22 {
-  display: contents;
-}
-.home-text26 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment23 {
-  display: contents;
-}
-.home-text27 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment24 {
-  display: contents;
-}
-.home-text28 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment25 {
-  display: contents;
-}
-.home-text29 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment26 {
-  display: contents;
-}
-.home-text30 {
-  display: inline-block;
-  font-family: "FredokaOne-Regular";
-}
-.home-fragment27 {
-  display: contents;
-}
-.home-text31 {
-  display: inline-block;
-}
-.home-text32 {
-  font-family: "Poppins";
-}
-.home-fragment28 {
-  display: contents;
-}
-.home-text34 {
-  display: inline-block;
-  font-family: "Poppins";
-}
-.home-fragment29 {
-  display: contents;
-}
-.home-text35 {
-  display: inline-block;
-  font-family: "Poppins";
-}
-.home-fragment30 {
-  display: contents;
-}
-.home-text36 {
-  display: inline-block;
-}
-.home-fragment31 {
-  display: contents;
-}
-.home-text39 {
-  display: inline-block;
-}
-.home-fragment32 {
-  display: contents;
-}
-.home-text40 {
-  display: inline-block;
-}
-.home-fragment33 {
-  display: contents;
-}
-.home-text43 {
-  display: inline-block;
-}
-.home-fragment34 {
-  display: contents;
-}
-.home-text44 {
-  display: inline-block;
-}
-.home-fragment35 {
-  display: contents;
-}
-.home-text45 {
-  display: inline-block;
-}
-.home-fragment36 {
-  display: contents;
-}
-.home-text46 {
-  display: inline-block;
-}
-.home-fragment37 {
-  display: contents;
-}
-.home-text47 {
-  color: #922727;
-  display: inline-block;
-}
-.home-fragment38 {
-  display: contents;
-}
-.home-text48 {
-  display: inline-block;
-}
-.home-fragment39 {
-  display: contents;
-}
-.home-text49 {
-  display: inline-block;
-}
-.home-fragment40 {
-  display: contents;
-}
-.home-text50 {
-  display: inline-block;
-}
-.home-fragment41 {
-  display: contents;
-}
-.home-text51 {
-  display: inline-block;
-}
-.home-fragment42 {
-  display: contents;
-}
-.home-text52 {
-  display: inline-block;
-}
-.home-fragment43 {
-  display: contents;
-}
-.home-text53 {
-  display: inline-block;
-}
-.home-fragment44 {
-  display: contents;
-}
-.home-text54 {
-  display: inline-block;
-}
-.home-fragment45 {
-  display: contents;
-}
-.home-text55 {
-  display: inline-block;
-}
-.home-fragment46 {
-  display: contents;
-}
-.home-text56 {
-  display: inline-block;
-}
-.home-fragment47 {
-  display: contents;
-}
-.home-text57 {
-  display: inline-block;
-}
-.home-fragment48 {
-  display: contents;
-}
-.home-text58 {
-  display: inline-block;
-}
-.home-fragment49 {
-  display: contents;
-}
-.home-text59 {
-  display: inline-block;
-}
-@media(max-width: 991px) {
-  .home-text10 {
-    box-shadow: inherit;
-  }
-  .home-text11 {
-    color: #ffffff;
-  }
-}
+.btn-purple { background:var(--purple); color:#fff; border-color:var(--purple); }
+.btn-purple:hover { background:var(--purple-dark); border-color:var(--purple-dark); transform:translateY(-2px); }
+.btn-outline { background:transparent; color:var(--purple); border-color:var(--purple); }
+.btn-outline:hover { background:var(--purple); color:#fff; transform:translateY(-2px); }
+
+.hero-mascot img {
+  width:300px; height:300px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: var(--purple);
+}
+.hero-mascot-fallback {
+  width:280px; height:280px;
+  border-radius:50%;
+  background:var(--purple);
+  display:flex; align-items:center; justify-content:center;
+  font-size:7rem;
+}
+
+/* PINK SECTION */
+.pink-section {
+  background: var(--pink);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.pink-section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--purple-dark);
+  margin-bottom: .75rem;
+  font-weight: normal;
+}
+.pink-section p { color:var(--text-dark); font-size:.95rem; margin-bottom:2.5rem; }
+
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--purple);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+.card:hover { transform:translateY(-4px); box-shadow:0 8px 28px rgba(91,79,154,.28); }
+.card-icon { font-size:2rem; margin-bottom:.75rem; }
+.card h3 { font-family:var(--font-display); font-size:1.1rem; margin-bottom:.5rem; font-weight:normal; }
+.card p { font-size:.82rem; opacity:.85; line-height:1.5; }
+
+/* NEWSLETTER */
+.newsletter-strip { background:var(--pink); padding:3rem 2rem; text-align:center; }
+.newsletter-strip h3 { font-family:var(--font-display); font-size:1.7rem; color:var(--purple-dark); margin-bottom:.5rem; font-weight:normal; }
+.newsletter-strip p { color:var(--text-dark); font-size:.9rem; margin-bottom:1.5rem; }
+.newsletter-form { display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; }
+.newsletter-form input {
+  padding:.65rem 1.5rem; border-radius:999px;
+  border:2px solid var(--purple-light); background:#fff;
+  font-family:var(--font-body); font-size:.9rem; color:var(--text-dark);
+  outline:none; width:280px; transition:border-color .2s;
+}
+.newsletter-form input:focus { border-color:var(--purple); }
+
+/* PAGE */
+.page-inner { max-width:1100px; margin:0 auto; padding:3rem 2rem 5rem; }
+.page-heading { font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); color:var(--purple-dark); margin-bottom:.5rem; font-weight:normal; }
+.page-sub { color:var(--text-mid); font-size:.95rem; margin-bottom:2rem; }
+
+/* WRITING */
+.writing-list { display:flex; flex-direction:column; border:2px solid var(--border); border-radius:16px; overflow:hidden; background:var(--white); }
+.writing-item {
+  display:flex; align-items:center; gap:1.25rem;
+  padding:1.2rem 1.5rem; border-bottom:1px solid var(--border);
+  transition:background .2s; cursor:pointer;
+}
+.writing-item:last-child { border-bottom:none; }
+.writing-item:hover { background:#faf8ff; }
+.writing-num { font-family:var(--font-display); font-size:1.3rem; color:var(--purple-light); min-width:32px; font-weight:normal; }
+.writing-info { flex:1; }
+.writing-info h3 { font-size:.95rem; font-weight:600; color:var(--text-dark); margin-bottom:.2rem; }
+.writing-info p { font-size:.8rem; color:var(--text-mid); }
+.writing-meta { font-size:.75rem; color:var(--text-light); text-align:right; white-space:nowrap; }
+
+.tag { display:inline-block; padding:.15rem .6rem; border-radius:99px; font-size:.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; margin-left:.4rem; vertical-align:middle; }
+.tag-story  { background:rgba(123,107,191,.12); color:var(--purple); }
+.tag-review { background:rgba(201,122,170,.12); color:var(--pink-btn); }
+.tag-lore   { background:rgba(255,180,60,.12);  color:#c8840a; }
+
+/* VIDEOS */
+.video-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1.25rem; }
+.video-card { background:var(--white); border:2px solid var(--border); border-radius:16px; overflow:hidden; cursor:pointer; transition:transform .2s, box-shadow .2s; }
+.video-card:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(123,107,191,.15); }
+.video-thumb {
+  aspect-ratio:16/9;
+  background:linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+  display:flex; align-items:center; justify-content:center;
+  font-size:3rem; position:relative; overflow:hidden;
+}
+.play-btn {
+  position:absolute; width:52px; height:52px;
+  background:rgba(255,255,255,.9); border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; transition:opacity .2s;
+}
+.play-btn::after { content:''; border-top:10px solid transparent; border-bottom:10px solid transparent; border-left:16px solid var(--purple); margin-left:4px; }
+.video-card:hover .play-btn { opacity:1; }
+.video-body { padding:1rem 1.25rem; }
+.video-body h3 { font-size:.92rem; font-weight:600; color:var(--text-dark); margin-bottom:.25rem; }
+.video-body p  { font-size:.8rem; color:var(--text-mid); }
+
+/* ABOUT */
+.about-layout { display:grid; grid-template-columns:260px 1fr; gap:3rem; align-items:start; }
+.about-mascot { width:100%; aspect-ratio:1; border-radius:50%; background:var(--purple); display:flex; align-items:center; justify-content:center; font-size:6rem; position:sticky; top:90px; }
+.about-content h2 { font-family:var(--font-display); font-size:2rem; color:var(--purple-dark); margin-bottom:1rem; font-weight:normal; }
+.about-content p { color:var(--text-dark); font-size:.95rem; margin-bottom:1rem; line-height:1.8; font-weight:300; }
+.about-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:2rem 0; }
+.stat-box { background:var(--purple); border-radius:12px; padding:1.25rem; text-align:center; color:#fff; }
+.stat-num { font-family:var(--font-display); font-size:2.2rem; display:block; font-weight:normal; }
+.stat-label { font-size:.78rem; opacity:.85; text-transform:uppercase; letter-spacing:1px; }
+.social-row { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:1.5rem; }
+.social-pill { display:flex; align-items:center; gap:.4rem; padding:.45rem 1.1rem; border:2px solid var(--border); border-radius:99px; color:var(--text-dark); text-decoration:none; font-size:.85rem; font-weight:500; transition:all .2s; }
+.social-pill:hover { border-color:var(--purple); color:var(--purple); }
+
+/* FORUM */
+.forum-top { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+.forum-cats { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+.cat-pill { padding:.3rem .9rem; border-radius:99px; font-size:.78rem; font-weight:600; border:2px solid var(--border); background:var(--white); color:var(--text-mid); cursor:pointer; transition:all .2s; font-family:var(--font-body); }
+.cat-pill:hover, .cat-pill.active { background:var(--purple); border-color:var(--purple); color:#fff; }
+
+.forum-table { background:var(--white); border:2px solid var(--border); border-radius:16px; overflow:hidden; }
+.forum-head { display:grid; grid-template-columns:1fr 80px 80px 120px; padding:.65rem 1.5rem; background:var(--purple); color:rgba(255,255,255,.9); font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; }
+.forum-row { display:grid; grid-template-columns:1fr 80px 80px 120px; padding:1rem 1.5rem; border-bottom:1px solid var(--border); align-items:center; gap:.5rem; cursor:pointer; transition:background .2s; }
+.forum-row:last-child { border-bottom:none; }
+.forum-row:hover { background:#faf8ff; }
+.forum-row h4 { font-size:.92rem; font-weight:600; color:var(--text-dark); margin-bottom:.2rem; }
+.forum-row-meta { font-size:.75rem; color:var(--text-light); }
+.forum-row-stat { font-size:.82rem; color:var(--text-mid); text-align:center; font-weight:500; }
+.forum-row-last { font-size:.75rem; color:var(--text-light); text-align:right; }
+.pin-badge { display:inline-block; background:rgba(201,122,170,.15); color:var(--pink-btn); font-size:.62rem; font-weight:700; padding:.1rem .45rem; border-radius:4px; text-transform:uppercase; letter-spacing:.5px; margin-left:.4rem; vertical-align:middle; }
+
+.new-thread { display:flex; gap:.75rem; margin-top:1.5rem; }
+.new-thread input { flex:1; background:var(--white); border:2px solid var(--border); border-radius:999px; padding:.65rem 1.25rem; color:var(--text-dark); font-family:var(--font-body); font-size:.9rem; outline:none; transition:border-color .2s; }
+.new-thread input:focus { border-color:var(--purple); }
+.new-thread input::placeholder { color:var(--text-light); }
+
+/* FOOTER */
+footer { background:var(--purple); color:rgba(255,255,255,.85); padding:2.5rem 2rem; text-align:center; }
+.footer-links { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; margin-bottom:1rem; }
+footer a { color:rgba(255,255,255,.85); text-decoration:none; font-size:.85rem; font-weight:500; transition:color .2s; }
+footer a:hover { color:#fff; }
+footer p { font-size:.78rem; opacity:.65; }
+
+/* RESPONSIVE */
+@media(max-width:720px){
+  .hero { grid-template-columns:1fr; padding:2.5rem 1.5rem; }
+  .hero-mascot { display:none; }
+  .about-layout { grid-template-columns:1fr; }
+  .about-mascot { display:none; }
+  .forum-head, .forum-row { grid-template-columns:1fr 70px; }
+  .forum-head span:nth-child(n+3), .forum-row>*:nth-child(n+3) { display:none; }
+  nav { padding:0 1.25rem; }
+  .nav-socials { display:none; }
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+section.active > * { animation:fadeUp .35s ease both; }
+section.active > *:nth-child(2) { animation-delay:.06s; }
+section.active > *:nth-child(3) { animation-delay:.12s; }
+section.active > *:nth-child(4) { animation-delay:.18s; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo" onclick="showSection('home')">
+    <img src="https://multiverseofmarshpotato.com/public/marshpotato_69-200h.png" alt="Logo"
+         onerror="this.outerHTML='<span style=\'font-size:1.8rem\'>🥔</span>'">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showSection('home')"       id="nav-home"       class="active">Home</a></li>
+    <li><a href="#" onclick="showSection('writing')"    id="nav-writing">Writing</a></li>
+    <li><a href="#" onclick="showSection('videos')"     id="nav-videos">Video</a></li>
+    <li><a href="#" onclick="showSection('about')"      id="nav-about">About</a></li>
+    <li><a href="#" onclick="showSection('multiverse')" id="nav-multiverse">Multiverse</a></li>
+  </ul>
+  <div class="nav-socials">
+    <a href="https://x.com/Marshpotato69" target="_blank">𝕏</a>
+    <a href="https://www.instagram.com" target="_blank">◎</a>
+    <a href="https://www.youtube.com/channel/UCTg_XdS-urWhqhz2kaZyAmg" target="_blank">▶</a>
+  </div>
+</nav>
+
+
+<!-- HOME -->
+<section id="home" class="active">
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Welcome to the Multiverse of Marshpotato</h1>
+      <p>Hello, Multiversal Traveler! We invite you to explore the wonderful multiverse with us. Join us on a wild ride to find new stories and places, never seen before.</p>
+      <div class="hero-btns">
+        <button class="btn btn-purple" onclick="showSection('writing')">Read</button>
+        <button class="btn btn-outline" onclick="showSection('videos')">Watch</button>
+      </div>
+    </div>
+    <div class="hero-mascot">
+      <img src="https://multiverseofmarshpotato.com/public/marsh_minimal-600w.png" alt="Marsh"
+           onerror="this.outerHTML='<div class=\'hero-mascot-fallback\'>🍥</div>'">
+    </div>
+  </div>
+
+  <div class="pink-section">
+    <h2>Discover the newest Multiversal Lands!</h2>
+    <p>What shall you explore today? Here are Marsh and Potato's Top Picks.</p>
+    <div class="card-row">
+      <div class="card" onclick="showSection('writing')">
+        <div class="card-icon">📖</div>
+        <h3>Latest Story</h3>
+        <p>Read Marsh's newest tale from across the dimensions.</p>
+      </div>
+      <div class="card" onclick="showSection('videos')">
+        <div class="card-icon">🎬</div>
+        <h3>Latest Video</h3>
+        <p>Watch the newest Marshpotato video fresh from the multiverse.</p>
+      </div>
+      <div class="card" onclick="showSection('multiverse')">
+        <div class="card-icon">🌀</div>
+        <h3>Multiverse Forum</h3>
+        <p>Chat and theorize with other multiversal travelers.</p>
+      </div>
+      <div class="card" onclick="showSection('about')">
+        <div class="card-icon">🥔</div>
+        <h3>Lore & Characters</h3>
+        <p>Meet Marsh, Potato, and every character in the universe.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter-strip">
+    <h3>Stay in the Loop!</h3>
+    <p>Subscribe to Marsh's newspaper for the latest updates on new videos and stories.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="your@email.com">
+      <button class="btn btn-purple">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- WRITING -->
+<section id="writing">
+  <div class="page-inner">
+    <h1 class="page-heading">Writing</h1>
+    <p class="page-sub">Stories, reviews, lore drops, and more from across the multiverse.</p>
+    <div class="writing-list">
+      <div class="writing-item">
+        <span class="writing-num">01</span>
+        <div class="writing-info">
+          <h3>The First Dimensional Rift <span class="tag tag-story">Story</span></h3>
+          <p>The origin story of how Marsh and Potato first stumbled into the multiverse.</p>
+        </div>
+        <div class="writing-meta">Apr 2024<br>8 min read</div>
+      </div>
+      <div class="writing-item">
+        <span class="writing-num">02</span>
+        <div class="writing-info">
+          <h3>Potato's Guide to Parallel Worlds <span class="tag tag-lore">Lore</span></h3>
+          <p>Everything you need to know about navigating multiversal portals — safely.</p>
+        </div>
+        <div class="writing-meta">Mar 2024<br>5 min read</div>
+      </div>
+      <div class="writing-item">
+        <span class="writing-num">03</span>
+        <div class="writing-info">
+          <h3>Wifand Christmas Special Recap <span class="tag tag-review">Review</span></h3>
+          <p>A look back at the holiday special and what it means for the lore.</p>
+        </div>
+        <div class="writing-meta">Dec 2023<br>4 min read</div>
+      </div>
+      <div class="writing-item">
+        <span class="writing-num">04</span>
+        <div class="writing-info">
+          <h3>Marsh's Field Notes: Dimension 7 <span class="tag tag-story">Story</span></h3>
+          <p>A hostile dimension, questionable food, and a talking rock named Gerald.</p>
+        </div>
+        <div class="writing-meta">Nov 2023<br>10 min read</div>
+      </div>
+      <div class="writing-item">
+        <span class="writing-num">05</span>
+        <div class="writing-info">
+          <h3>Character Profiles: Full Archive <span class="tag tag-lore">Lore</span></h3>
+          <p>Every character in the Marshpotato universe, documented and classified.</p>
+        </div>
+        <div class="writing-meta">Oct 2023<br>12 min read</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="page-inner">
+    <h1 class="page-heading">Video</h1>
+    <p class="page-sub">Watch the latest Marshpotato content — from stories to deep dives.</p>
+    <div class="video-grid">
+      <div class="video-card" onclick="window.open('https://www.youtube.com/channel/UCTg_XdS-urWhqhz2kaZyAmg','_blank')">
+        <div class="video-thumb">🍥<div class="play-btn"></div></div>
+        <div class="video-body"><h3>Latest Upload — Coming Soon</h3><p>New video incoming from the multiverse studios.</p></div>
+      </div>
+      <div class="video-card" onclick="window.open('https://www.youtube.com/channel/UCTg_XdS-urWhqhz2kaZyAmg','_blank')">
+        <div class="video-thumb" style="font-size:2.5rem">🌀<div class="play-btn"></div></div>
+        <div class="video-body"><h3>Multiverse Explained</h3><p>An introduction to the world of Marsh and Potato.</p></div>
+      </div>
+      <div class="video-card" onclick="window.open('https://www.youtube.com/channel/UCTg_XdS-urWhqhz2kaZyAmg','_blank')">
+        <div class="video-thumb" style="font-size:2.5rem">🎄<div class="play-btn"></div></div>
+        <div class="video-body"><h3>Wifand Christmas Special</h3><p>The holiday special that kicked off the Wifand arc.</p></div>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="https://www.youtube.com/channel/UCTg_XdS-urWhqhz2kaZyAmg" target="_blank" class="btn btn-purple">YouTube Channel →</a>
+      <a href="https://www.twitch.tv/marshpotato69" target="_blank" class="btn btn-outline">Twitch →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- MULTIVERSE FORUM -->
+<section id="multiverse">
+  <div class="page-inner">
+    <div class="forum-top">
+      <div>
+        <h1 class="page-heading">The Multiverse Forum</h1>
+        <p class="page-sub">Discuss theories, lore, and stories with fellow travelers.</p>
+      </div>
+      <button class="btn btn-purple" onclick="document.getElementById('threadInput').focus()">+ New Thread</button>
+    </div>
+    <div class="forum-cats">
+      <button class="cat-pill active" onclick="filterCat(this,'all')">All</button>
+      <button class="cat-pill" onclick="filterCat(this,'lore')">Lore & Theory</button>
+      <button class="cat-pill" onclick="filterCat(this,'stories')">Stories</button>
+      <button class="cat-pill" onclick="filterCat(this,'videos')">Videos</button>
+      <button class="cat-pill" onclick="filterCat(this,'general')">General</button>
+      <button class="cat-pill" onclick="filterCat(this,'announcements')">Announcements</button>
+    </div>
+    <div class="forum-table" id="forumTable">
+      <div class="forum-head">
+        <span>Thread</span>
+        <span style="text-align:center">Replies</span>
+        <span style="text-align:center">Views</span>
+        <span style="text-align:right">Last Post</span>
+      </div>
+      <div class="forum-row" data-cat="announcements">
+        <div><h4>Welcome to the Multiverse Forum! <span class="pin-badge">📌 Pinned</span></h4><div class="forum-row-meta">Announcements · by Marsh</div></div>
+        <span class="forum-row-stat">42</span><span class="forum-row-stat">1.2k</span><span class="forum-row-last">2 days ago<br>by Potato</span>
+      </div>
+      <div class="forum-row" data-cat="lore">
+        <div><h4>Theory: What is Dimension 7 really?</h4><div class="forum-row-meta">Lore & Theory · by traveler_404</div></div>
+        <span class="forum-row-stat">18</span><span class="forum-row-stat">430</span><span class="forum-row-last">5 hrs ago<br>by marshfan</span>
+      </div>
+      <div class="forum-row" data-cat="stories">
+        <div><h4>Wifand Christmas Special — Full Discussion</h4><div class="forum-row-meta">Stories · by Marsh</div></div>
+        <span class="forum-row-stat">61</span><span class="forum-row-stat">2.1k</span><span class="forum-row-last">1 day ago<br>by xmas_fan</span>
+      </div>
+      <div class="forum-row" data-cat="lore">
+        <div><h4>Who is Gerald the rock and why does he matter?</h4><div class="forum-row-meta">Lore & Theory · by potato_stan</div></div>
+        <span class="forum-row-stat">9</span><span class="forum-row-stat">215</span><span class="forum-row-last">3 days ago<br>by gerald_fan</span>
+      </div>
+      <div class="forum-row" data-cat="general">
+        <div><h4>New viewer — where do I start?</h4><div class="forum-row-meta">General · by newbie_traveler</div></div>
+        <span class="forum-row-stat">14</span><span class="forum-row-stat">380</span><span class="forum-row-last">1 week ago<br>by Potato</span>
+      </div>
+      <div class="forum-row" data-cat="general">
+        <div><h4>Favourite Marsh quote of all time?</h4><div class="forum-row-meta">General · by multiverse_mike</div></div>
+        <span class="forum-row-stat">33</span><span class="forum-row-stat">870</span><span class="forum-row-last">2 weeks ago<br>by spudlover</span>
+      </div>
+    </div>
+    <div class="new-thread">
+      <input id="threadInput" type="text" placeholder="Start a new thread...">
+      <button class="btn btn-purple" onclick="postThread()">Post</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="page-inner">
+    <div class="about-layout">
+      <div class="about-mascot">🥔</div>
+      <div class="about-content">
+        <h2>About Marshpotato</h2>
+        <p>Welcome, multiversal traveler! We're Marsh and Potato — a creative duo exploring the infinite possibilities of storytelling across dimensions, mediums, and genres.</p>
+        <p>From original short stories and world-building lore to YouTube videos and live streams, the Multiverse of Marshpotato is an ever-expanding creative universe built for curious minds.</p>
+        <p>This project started as a small creative outlet and grew into a full multiversal community. Every story, video, and forum post is a new doorway into the world we're building together.</p>
+        <div class="about-stats">
+          <div class="stat-box"><span class="stat-num">50+</span><span class="stat-label">Stories</span></div>
+          <div class="stat-box"><span class="stat-num">20+</span><span class="stat-label">Videos</span></div>
+          <div class="stat-box"><span class="stat-num">∞</span><span class="stat-label">Dimensions</span></div>
+        </div>
+        <div class="social-row">
+          <a href="https://www.youtube.com/channel/UCTg_XdS-urWhqhz2kaZyAmg" target="_blank" class="social-pill">▶ YouTube</a>
+          <a href="https://x.com/Marshpotato69" target="_blank" class="social-pill">𝕏 Twitter</a>
+          <a href="https://www.twitch.tv/marshpotato69" target="_blank" class="social-pill">🟣 Twitch</a>
+          <a href="mailto:?subject=Contact%20Marshpotato" class="social-pill">✉ Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-links">
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('writing')">Writing</a>
+    <a href="#" onclick="showSection('videos')">Video</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('multiverse')">Multiverse</a>
+    <a href="https://x.com/Marshpotato69" target="_blank">Twitter</a>
+    <a href="https://www.youtube.com/channel/UCTg_XdS-urWhqhz2kaZyAmg" target="_blank">YouTube</a>
+    <a href="https://www.twitch.tv/marshpotato69" target="_blank">Twitch</a>
+  </div>
+  <p>© 2024 Multiverse of Marshpotato. All Rights Reserved.</p>
+</footer>
+
+<script>
+function showSection(id){
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const n=document.getElementById('nav-'+id);
+  if(n) n.classList.add('active');
+  window.scrollTo(0,0);
+  return false;
+}
+
+function filterCat(btn,cat){
+  document.querySelectorAll('.cat-pill').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#forumTable .forum-row').forEach(row=>{
+    row.style.display=(cat==='all'||row.dataset.cat===cat)?'':'none';
+  });
+}
+
+function postThread(){
+  const input=document.getElementById('threadInput');
+  const val=input.value.trim();
+  if(!val) return;
+  const table=document.getElementById('forumTable');
+  const row=document.createElement('div');
+  row.className='forum-row'; row.dataset.cat='general';
+  row.innerHTML=`<div><h4>${val.replace(/</g,'&lt;')}</h4><div class="forum-row-meta">General · by you</div></div><span class="forum-row-stat">0</span><span class="forum-row-stat">1</span><span class="forum-row-last">Just now<br>by you</span>`;
+  table.appendChild(row);
+  input.value='';
+}
+
+document.getElementById('threadInput').addEventListener('keydown',e=>{if(e.key==='Enter')postThread();});
+</script>
+</body>
+</html>
